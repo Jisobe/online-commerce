@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>{{store}}: Categories</title>
+  </head>
+  <body>
+    <h2>{{store}} Categories</h2>
+    <ul>
+      {% for category in categories%}
+        <li><a href='{%url 'category_detail' category.name %}'>{{category.name}}</a></li>
+      {%endfor%}
+    </ul>
+  </body>
+</html>

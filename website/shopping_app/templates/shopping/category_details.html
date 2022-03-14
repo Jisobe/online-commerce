@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>{{product.category}} Products</title>
+  </head>
+  <body>
+    <h2>{{product.category}} Products</h2>
+    <ul>
+      {% for product in products%}
+
+        <li><a href='{%url 'product' product.category product.name %}'>{{product.name}}</a><li>
+      {%endfor%}
+    </ul>
+  </body>
+</html>

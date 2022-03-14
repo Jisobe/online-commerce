@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>{{product_details.name}}</title>
+  </head>
+  <body>
+    <h2>{{product_details.name}}</h2>
+    <ul>
+      <li>{{product_details.name}}</li>
+      <li>{{product_details.description}}</li>
+      <li>{{product_details.price}}</li>
+      {% comment %} {% for item in product_details%}
+        <li>{{item}}</li>
+      {%endfor%}  {% endcomment %}
+    <ul>
+    <li><a href={% url 'cart' %}>Add to cart</a></li>
+    <li><a href={% url 'cart' %}>View Cart</a></li>
+    </ul>
+  </body>
+</html>
