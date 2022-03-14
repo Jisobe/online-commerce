@@ -38,22 +38,6 @@ html * {
   font-size: 50px;
   font-family: cursive;
   font-weight: bold;
-  
-}
-
-#nav{
-  display: flex;
-  justify-content: space-evenly;
-  padding-left: 200px;
-  padding-right: 200px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-left: 0;
-  margin-right: 0;
-  border-top: 2px solid black;
-  background-color: rgb(182, 191, 206);
-  font-family: monospace;
-  
 }
 
 .content{
@@ -65,7 +49,7 @@ html * {
   margin-right: 0;
   border-top: 2px solid black;
   background-color: rgb(231, 233, 235);
-  height: 1000px;
+  /* height: 700px; */
   overflow: scroll;
 }
 
@@ -84,19 +68,8 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: rgb(3, 3, 3);
+  background-color: rgb(170, 123, 61);
   color: white;
-}
-
-.about{
-  flex-direction: column;
-  font-size: larger;
-  font-weight: bolder;
-  padding: 100px;
-}
-
-#about_para{
-  padding: 15px;
 }
 
 #add_statement{
@@ -136,3 +109,10 @@ a:hover, a:active {
   justify-content: center;
 }
 
+.picture{
+  display: flex;
+  /* height: 300px;
+  width: 700px; */
+  background-color: rgb(231, 233, 235);
+  justify-content: center;
+}
