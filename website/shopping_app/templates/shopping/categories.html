@@ -1,13 +1,12 @@
-<html>
-  <head>
-    <title>{{store}}: Categories</title>
-  </head>
-  <body>
-    <h2>{{store}} Categories</h2>
-    <ul>
-      {% for category in categories%}
-        <li><a href='{%url 'category_detail' category.name %}'>{{category.name}}</a></li>
-      {%endfor%}
-    </ul>
-  </body>
-</html>
+{% extends 'shopping/base.html' %}
+
+{% block content %}
+<div class = 'content_div'>
+<h2 id = 'title'>{{store}} Categories</h2>
+  <div class = 'list'>
+  {% for category in categories%}
+    <a href='{%url 'category_detail' category.name %}'>{{category.name}}</a>
+  {%endfor%}
+  </div>
+</div>
+{% endblock content %}

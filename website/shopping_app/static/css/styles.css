@@ -1,0 +1,138 @@
+html * {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: scroll;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 5px solid black;
+  background-color: rgb(182, 191, 206);
+  position: relative;
+}
+
+.foot_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#header{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  background-image: linear-gradient(315deg, #8b824f 0%, #2f3152 74%);
+  color: azure;
+  font-size: 50px;
+  font-family: cursive;
+  font-weight: bold;
+  
+}
+
+#nav{
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 2px solid black;
+  background-color: rgb(182, 191, 206);
+  font-family: monospace;
+  
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 2px solid black;
+  background-color: rgb(231, 233, 235);
+  height: 1000px;
+  overflow: scroll;
+}
+
+.content_div{
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: black;
+  padding: 1px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+}
+
+a:hover, a:active {
+  background-color: rgb(3, 3, 3);
+  color: white;
+}
+
+.about{
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 100px;
+}
+
+#about_para{
+  padding: 15px;
+}
+
+#add_statement{
+  font-size: medium;
+  font-weight: bold;
+}
+
+#title{
+  font-size: xx-large;
+  font-family: cursive;
+  font-weight: bold;
+  border: 1px solid black;
+  height: 50px;
+  background-color: dimgray;
+}
+
+.cart_list{
+  display: flex;
+  border: 1px solid black;
+  text-align: left;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 20px 50px 10px 50px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 20px 50px 10px 50px;
+}
+
+#add_to_cart{
+  display: flex;
+  justify-content: center;
+}
+

@@ -1,0 +1,10 @@
+{% extends 'shopping/base.html' %}
+
+{%block content%}
+
+  <div class = 'content_div'>
+    <h3 id = 'add_statement'>Item has been sucessfully added to your cart see summary below</h3>
+    <p id = 'add_item'>{{add.quantity}} {{add.product}} for {{add.price}}</p>
+  </div>
+
+{%endblock%}

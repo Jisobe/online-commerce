@@ -6,7 +6,9 @@ urlpatterns = [
     path('categories/', views.categories, name = 'categories'),
     path('categories/<category_name>/', views.category_details, name = 'category_detail'),
     path('categories/<category_name>/<product_name>/', views.product_details, name = 'product'),
+    path('add_to_cart/<product_name>/<product_price>/', views.add_to_cart, name = 'add_to_cart'),
     path('cart/', views.cart, name = 'cart'),
+    path('about/', views.about, name = 'about'),
 ]
 
 # - **Category pages**

@@ -1,14 +1,12 @@
-<html>
-  <head>
-    <title>{{product.category}} Products</title>
-  </head>
-  <body>
-    <h2>{{product.category}} Products</h2>
-    <ul>
-      {% for product in products%}
+{% extends 'shopping/base.html' %}
 
-        <li><a href='{%url 'product' product.category product.name %}'>{{product.name}}</a><li>
-      {%endfor%}
-    </ul>
-  </body>
-</html>
+{% block content %}
+<div class = 'content_div'>
+  <h2 id = 'title'>{{category}} Products</h2>
+  <div class = 'list'>
+    {% for product in products%}
+      <a href='{%url 'product' product.category product.name %}'>{{product.name}}</a>
+    {%endfor%}
+  </div>
+</div>
+{% endblock content %}

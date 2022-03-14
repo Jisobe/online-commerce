@@ -1,0 +1,19 @@
+{% extends 'shopping/base.html' %}
+
+{%block content%}
+  <div class = 'content_div'>
+    <h3 id = 'title'>Your Cart</h3>
+    <div class = 'cart_list'>
+      <p id = 'list_item'>Quantity</p> 
+      <p id = 'list_item'>Product</p>
+      <p id = 'list_item'>Price</p>
+    </div>
+    {% for item in cart%}
+      <div class = 'cart_list'>
+      <p id = 'list_item'>{{item.quantity}}</p> 
+      <p id = 'list_item'>{{item.product}}</p>
+      <p id = 'list_item'>{{item.price}}</p>
+      </div>
+    {%endfor%}
+  </div>
+{% endblock %}
